@@ -1,27 +1,44 @@
-*.log
-.DS_Store
-.env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.codex
-/.cursor/
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
+# Laravel / PHP
+/vendor
 /node_modules
 /public/build
-/public/fonts-manifest.dev.json
 /public/hot
 /public/storage
 /storage/*.key
 /storage/pail
-/vendor
-_ide_helper.php
+/bootstrap/cache/*.php
+*.log
+
+# Environment
+.env
+.env.backup
+.env.production
+
+# Cache & cache tools
+.phpunit.result.cache
+.phpactor.json
+auth.json
+
+# IDE / Editor
+/.idea
+/.vscode
+/.nova
+/.phpunit.cache
+/.zed
+/.cursor/
+.codex
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Laravel legacy / optional
 Homestead.json
 Homestead.yaml
-Thumbs.db
+/.vagrant
+
+# Laravel public storage (compat)
+public_html/storage
+public_html/hot
+app/storage/
+bootstrap/compiled.php
